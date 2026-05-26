@@ -14,6 +14,7 @@ header {
     align-items: center;
     position: sticky;
     top: 0;
+    animation: cabecalho 1s;
 }
 
 main {
@@ -46,6 +47,7 @@ section {
 
 .card:hover {
     background-color: #dfefff;
+    top: -10px;
 }
 
 img {
@@ -71,6 +73,7 @@ button {
 
 button:hover {
     background-color: #315985;
+    animation: botao 0.5s;
 }
 
 footer {
@@ -78,6 +81,17 @@ footer {
     color: white;
     padding: 15px;
     text-align: center;
+    animation: rodape 1.5s;
+}
+
+@keyframes cabecalho {
+    from {
+        background-color: #315985;
+    }
+
+    to {
+        background-color: #1f3a5f;
+    }
 }
 
 @keyframes aparecer {
@@ -91,6 +105,26 @@ footer {
         opacity: 1;
         top: 0;
         background-color: white;
+    }
+}
+
+@keyframes botao {
+    from {
+        background-color: #1f3a5f;
+    }
+
+    to {
+        background-color: #315985;
+    }
+}
+
+@keyframes rodape {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }
 
